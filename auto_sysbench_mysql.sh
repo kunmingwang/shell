@@ -1,6 +1,7 @@
 #!/bin/bash
 # 
-# wkm@20210108 auto_testmysql.sh
+# wkm@20210108 auto_testmysql.sh 
+# www.gongyuenet.cn
 # 使用sysbench自动压测MySQL
 # 压测前准备：
 # 1、参考使用tar包安装配置MySQL, 初始化数据库完成之后，创建压测的sysbench数据库，然后将数据目录完整拷贝一份出去，如: cp -r /vdb/mysqldata/data/* /root/sysbench/data/
