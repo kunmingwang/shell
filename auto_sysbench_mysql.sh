@@ -126,6 +126,13 @@ main(){
 case "$mode" in
   'start')
     # 执行压测
+    for i in `echo $other_args`;do
+        if [ "$i" != "" ];then
+                cfg_item=${i%%=*}
+                sed -i "s/$cfg_item/#$cfg_item/g" /etc/my.cnf
+                sed -i "/#$cfg_item/a$i" /etc/my.cnf
+        fi
+     done
 	main
     ;;
 
